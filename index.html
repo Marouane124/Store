@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="icon" href="./Images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="java.js"></script>
+    <title>WEBSITE</title>
+</head>
+<body onload="Verifyposition()">  
+    <div class="container">
+        <nav id="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="logo"><a href="#" class="none">LOGO</a></label>
+            <ul>
+                <li><a href="#"  class="active" id="navitem">
+                            <i class="fa-solid fa-house-chimney"></i> Accueil</a></li>
+                <li><a href="#content1" id="content1-java">
+                            <i class="fa-solid fa-bag-shopping"></i> Nos produit</a></li>
+                <li><a href="#content4" id="propos-java">
+                            <i class="fa-solid fa-people-group"></i> À propos de nous</a></li>
+                <li><a href="#panier"   >
+                    <i class="fa-solid fa-cart-shopping"></i></i> Panier</a></li>
+                <li><a href="#Contact" id="Contact-java">
+                            <i class="fa-solid fa-message"></i> Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <button  onclick="topFunction()" id="myBtn" title="Revenir en haut"><img src="./Images/top.png" width="30" height="30" /></button>
+        
+        <main>
+            <h1>Store</h1>
+            <p>Produits de hautes qualités</p>
+            <a href="#"><button type="button" >Découvrez nos produits</button></a>    
+        </main>
+
+        <div id="content1">
+            <div class="card card1">
+                <h5>Produit 1</h5>
+                <div class="under-card">
+                    <h4>Voir produit <i class="fa-solid fa-arrow-right arrow"></i></h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="content2">
+            <div class="card card2">
+                <h5>Produit 2</h5>
+                <div class="under-card">
+                    <h4>Voir produit <i class="fa-solid fa-arrow-right arrow"></i></h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="content3">
+            <div class="card card3">
+                <h5>Produit 3</h5>
+                <div class="under-card">
+                    <h4>Voir produit <i class="fa-solid fa-arrow-right arrow"></i></h4>
+                </div>
+            </div>
+        </div>
+        
+        <div id="content4">
+            <h5>A propos</h5>
+        </div>
+        
+        <div id="Contact">
+            <h5>Contactez-nous</h5>
+            <hr class="line" id="line-java">
+        </div>
+        
+
+        <div id="Map">
+            <br><br><h5>Rendez nous visite</h5><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13582.606516463804!2d-8.04960963539385!3d31.67074946193117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafec0cabdb4965%3A0x6430e0d3549a7789!2sQuartier%20Industriel%20Sidi%20Ghanem%2C%20Marrakech!5e0!3m2!1sfr!2sma!4v1658996511870!5m2!1sfr!2sma" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div id="content6">
+            <h5>Form</h5>
+            <form>
+                
+            </form>
+        </div>
+
+        <div id="footer">
+            <p>Tous droits réservés. ©2022 Online Store </p>
+        </div>
+    </div>
+     
+</body>
+</html>  
