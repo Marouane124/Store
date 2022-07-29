@@ -1,10 +1,5 @@
 window.addEventListener('scroll',ActiveMenu)
-/*window.addEventListener('click',CloseMenu)
-
-function CloseMenu(){
-  document.getElementById("check").checked = false;
-}*/
-
+window.addEventListener('scroll',reveal);
 
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
@@ -54,7 +49,23 @@ function ActiveMenu(){
     document.getElementById("content1-java").classList.remove('active');
     document.getElementById("propos-java").classList.remove('active');
     document.getElementById("Contact-java").className += " active"; 
-    document.getElementById("line-java").className += " line-animation";//Active l'animation de la ligne
+    document.getElementById("line-java").className += " line-animation"; 
+  }
 
+}
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+  
+  for(var i = 0;i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
   }
 }
+
