@@ -1,4 +1,4 @@
-window.addEventListener('scroll',() => { ActiveMenu(); reveal(); });
+window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine() });
 
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
@@ -25,14 +25,12 @@ function ActiveMenu(){
   document.getElementById("content1-java").classList.remove('active');
   document.getElementById("propos-java").classList.remove('active');
   document.getElementById("Contact-java").classList.remove('active');
-  document.getElementById("line-java").classList.remove('line-animation');
   if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
     document.getElementById("nav").className += " nav-opacity";
     document.getElementById("navitem").classList.remove('active');
     document.getElementById("content1-java").className += " active"; 
     document.getElementById("propos-java").classList.remove('active');
     document.getElementById("Contact-java").classList.remove('active');
-    document.getElementById("line-java").classList.remove('line-animation');
   }
   if (document.body.scrollTop > 710 || document.documentElement.scrollTop > 710) { 
     document.getElementById("nav").className += " nav-opacity";
@@ -40,7 +38,6 @@ function ActiveMenu(){
     document.getElementById("content1-java").classList.remove('active');
     document.getElementById("propos-java").className += " active"; 
     document.getElementById("Contact-java").classList.remove('active');
-    document.getElementById("line-java").classList.remove('line-animation');
   }
   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
     document.getElementById("nav").className += " nav-opacity";
@@ -48,7 +45,6 @@ function ActiveMenu(){
     document.getElementById("content1-java").classList.remove('active');
     document.getElementById("propos-java").classList.remove('active');
     document.getElementById("Contact-java").className += " active"; 
-    document.getElementById("line-java").className += " line-animation"; 
   }
 
 }
@@ -63,9 +59,18 @@ function reveal(){
     if(revealtop < windowheight - revealpoint){
       reveals[i].classList.add('active');
     }
-    else{
-      reveals[i].classList.remove('active');
-    }
   }
 }
 
+function AnimateLine(){
+  var reveals = document.querySelectorAll('.line');
+  
+  for(var i = 0;i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('line-animation');
+    }
+  }
+}
