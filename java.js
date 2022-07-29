@@ -1,5 +1,4 @@
-window.addEventListener('scroll',ActiveMenu)
-window.addEventListener('scroll',reveal);
+window.addEventListener('scroll',() => { ActiveMenu(); reveal(); });
 
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
@@ -53,6 +52,7 @@ function ActiveMenu(){
   }
 
 }
+
 function reveal(){
   var reveals = document.querySelectorAll('.reveal');
   
