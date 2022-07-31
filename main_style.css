@@ -232,7 +232,8 @@ p{
 }
    
 main {
-    background: #73ffba;
+    background-image: url(Images/Background.jpg);
+    background-size: cover;
     grid-area: main;
     border-radius: 5px;
     padding-top: 180px;
