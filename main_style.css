@@ -218,10 +218,10 @@ p{
     grid-template-areas:
       "nav nav nav"
       "main main main"
-      "content1 content2 content3"
-      "content4 content4 content4"
+      "Produit1 Produit2 Produit3"
+      "Apropos Apropos Apropos"
       "Contact Contact Contact"
-      "Map content6 content6"
+      "Map form_zone form_zone"
       "footer footer footer";
     grid-gap: 0.5rem;
     font-weight: 800;
@@ -240,33 +240,33 @@ main {
     scroll-margin-top: 5rem;
 }
 
-#content1 {
+#Produit1 {
     background: #64ffda;
-    grid-area: content1;
+    grid-area: Produit1;
     border-radius: 5px;
     padding-top: 5px;
     scroll-margin-top: 7.5rem;
 }
   
-#content2 {
+#Produit2 {
     background: #58f3a6;
-    grid-area: content2;
+    grid-area: Produit2;
     border-radius: 5px;
     padding-top: 5px;
     scroll-margin-top: 7.5rem;
 }
   
-#content3 {
+#Produit3 {
     background: #64ffda;
-    grid-area: content3;
+    grid-area: Produit3;
     border-radius: 5px;
     padding-top: 5px;
     scroll-margin-top: 7.5rem;
 }
 
-#content4 {
+#Apropos {
     background: #73ffba;
-    grid-area: content4;
+    grid-area: Apropos;
     border-radius: 5px;
     padding-top: 5px;
     scroll-margin-top: 5rem;
@@ -307,9 +307,9 @@ main {
     border-radius: 5px;
     padding-top: 5px;
 }
-#content6 {
+#form_zone {
     background: #73ffba;
-    grid-area: content6;
+    grid-area: form_zone;
     border-radius: 5px;
     padding-top: 5px;
 }
@@ -345,17 +345,17 @@ main {
 @media only screen and (max-width: 550px) {
     .container {
       grid-template-columns: 1fr;
-      grid-template-rows: 70px 300px 255px 255px 255px 255px 50px 350px 355px 70px;
+      grid-template-rows: 70px 300px 255px 255px 255px 255px 50px 350px 455px 70px;
       grid-template-areas:
         "nav"
         "main"
-        "content1"
-        "content2"
-        "content3"
-        "content4"
+        "Produit1"
+        "Produit2"
+        "Produit3"
+        "Apropos"
         "Contact"
         "Map"
-        "content6"
+        "form_zone"
         "footer";
     }
 
@@ -457,75 +457,79 @@ main {
 }
 
 /*----------------Formulaire/Form-------------*/
-form{
+
+.contact_form{
+    display: flex;
+    height: 75vh;
+}
+
+.form{
+    width: 360px;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+}
+
+.form_div{
     position: relative;
-    top: 4rem;
-    width: 20rem;
-    font-size: 14px;
+    left: 3rem;
+    height: 48px;
+    margin-bottom: 1.5rem;
 }
 .form_input{
     position: absolute;
-    left: 3.5rem;
+    left: 1rem;
+    top: 0.1rem;
     width: 100%;
     height: 100%;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
     border: 2px solid #1ad3d3;
-    border-radius: 0.5rem;
-    color: rgb(0, 0, 0);
+    border-radius: .5rem;
     outline: none;
     padding: 1.25rem;
-    background: none;
-
-}
-.form_input1{
-    top: 0;
+    background-color: #73ffba;
 }
 
-.form_input2{
-    top: 70px;
-}
-
-.form_input3{
-    top: 140px;
-}
-
-.form_input4{
-    top: 210px;
+.form_label{
+    position: absolute;
+    top: 1rem;
+    left: 4.5rem;
+    padding: 0 0 0.5rem;
+    color: rgb(39, 35, 35);
+    background: #73ffba;
+    cursor: text;
+    font-size: 14px;
 }
 
 .form_input:hover{
     border-color: #30b495;
 }
+
 .form_input:focus{
     border-color: #16725d;
 }
 
-.form_label{
-    position: absolute;
-    left: 6.5rem;
-    padding: 0 0 0.5rem;
-    color: rgb(39, 35, 35);
-    background: #73ffba;
-    cursor: text;
-    transition:top 200ms ease-in,
-        left 200ms ease-in,
-        font-size 200ms ease-in;
+.form_input:focus + .form_label,.form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label{
+    top: -0.4rem;
+    left: 2.3rem;
+    font-size: 12px;
+    transition: .2s;
 }
 
-.form_label1{
-    top: 1rem;
-}
-.form_label2{
-    top: 5.2rem;
-}
-.form_label3{
-    top: 9.7rem;
-}
-.form_label4{
-    top: 14rem;
+.form_button{
+    display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: #5decec;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .2s;
 }
 
-.form_input:focus ~ .form_label,.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label{
-    top: -0.5rem;
-    left: 5rem;
-    font-size: 13px;
+.form_button:hover{
+    background-color: #47c7a9;
+    box-shadow: 0 1px 1px #16725d;
 }
