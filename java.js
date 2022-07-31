@@ -1,4 +1,4 @@
-window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine() });
+window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax() });
 
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
@@ -73,4 +73,10 @@ function AnimateLine(){
       reveals[i].classList.add('line-animation');
     }
   }
+}
+
+function parallax(){
+  var parallax = document.getElementById("parallax");
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.5 +"px";
 }
