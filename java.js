@@ -1,4 +1,4 @@
-window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax() });
+window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax();Closemenu() });
 
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
@@ -79,4 +79,13 @@ function parallax(){
   var parallax = document.getElementById("parallax");
   let offset = window.pageYOffset;
   parallax.style.backgroundPositionY = offset * 0.5 +"px";
+}
+
+function Closemenu(){
+  var button = document.getElementById("check");
+  document.onclick = function(clickevent){
+    if(clickevent.target.className =="NavLink" ){
+      button.checked = false;
+    }
+  }
 }
