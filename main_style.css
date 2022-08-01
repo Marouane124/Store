@@ -313,11 +313,15 @@ main {
     border-radius: 5px;
     padding-top: 5px;
 }
+#form_zone h5{
+    margin-top: 30px;
+}
 
 /*----------------Formulaire/Form-------------*/
 
 .contact_form{
     display: flex;
+    margin-top: -35px;
     height: 75vh;
 }
 
@@ -329,7 +333,7 @@ main {
 
 .form_div{
     position: relative;
-    left: 3rem;
+    left: 2.25rem;
     height: 48px;
     margin-bottom: 1.5rem;
 }
@@ -348,7 +352,10 @@ main {
     padding: 1.25rem;
     background-color: #73ffba;
 }
-
+.message_input{
+    height: 100px;
+    resize: none;
+}
 .form_label{
     position: absolute;
     top: 1rem;
@@ -378,6 +385,7 @@ main {
 .form_button{
     display: block;
     margin-left: auto;
+    margin-top: 20px;
     padding: .75rem 2rem;
     outline: none;
     border: none;
@@ -423,7 +431,7 @@ main {
 @media only screen and (max-width: 550px) {
     .container {
       grid-template-columns: 1fr;
-      grid-template-rows: 70px 300px 255px 255px 255px 255px 50px 350px 455px 70px;
+      grid-template-rows: 70px 300px 255px 255px 255px 255px 50px 350px 480px 70px;
       grid-template-areas:
         "nav"
         "main"
