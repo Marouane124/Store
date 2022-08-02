@@ -90,11 +90,33 @@ h1{
     font-size: 100px;
     line-height: 80px;
     font-weight: bold;
-    animation: blur 1s;
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+main span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+/*---------------------------------------------------------*/
 main p{
     font-weight: 900;
-    animation: blur 2.5s;
+    animation: blur 4s;
 }
 
 @keyframes blur {
@@ -158,7 +180,7 @@ p{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 545px 800px 230px 60px 500px 70px;
+    grid-template-rows: 70px 545px auto 230px 60px 500px 70px;
     grid-template-areas:
       "nav nav nav"
       "main main main"
@@ -185,7 +207,6 @@ main {
 }
 
 #Produits {
-    background: #64ffda;
     grid-area: Produits;
     border-radius: 5px;
     padding-top: 5px;
@@ -193,13 +214,40 @@ main {
     z-index: 0;
 }
 
+.Title{
+    font-size: 22px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #4ee6fa 0%,
+        #36e3fa 34%,
+        #269faf 64%,
+        #0eb4a6 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+  
+
 .wrapper-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 18rem);
+    padding-left: 5rem;
+    padding-right: 5rem;
     justify-content: center;
+    align-items: center;
 }
 .card{
-    height: 22rem;
+    height: 24rem;
     padding: 2rem 1rem;
     position: relative;
     display: flex;
@@ -212,7 +260,7 @@ main {
 }
 .card .image{
     width: 100%;
-    height: 75%;
+    height: 15rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -467,7 +515,7 @@ main {
 @media only screen and (max-width: 550px) {
     .container {
       grid-template-columns: 1fr;
-      grid-template-rows: 70px 300px 200rem  255px 50px 350px 480px 70px;
+      grid-template-rows: 70px 300px auto  255px 50px 350px 480px 70px;
       grid-template-areas:
         "nav"
         "main"
@@ -521,7 +569,9 @@ main {
     main {
         padding-top: 50px;
     }
-
+    .Title{
+        font-size: 18px;
+    }
     #Contact {
         line-height: 50px;
     }
@@ -561,14 +611,63 @@ main {
     }
 }
 
-.reveal{
+.reveal {
     position: relative;
-    transform: translateY(50px);
-    transition: all 2s ease;
     opacity: 0;
+  }
+  
+.reveal.active {
+    opacity: 1;
 }
 
-.reveal.active{
-    transform: translateY(0px);
-    opacity: 1;
+.active.from_bottom {
+    animation: from-bottom 1s ease-in;
+}
+
+.active.from_left {
+    animation: from-left 1s ease-in;
+}
+
+
+@keyframes from-bottom {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+
+@keyframes from-left {
+    0% {
+      transform: translatex(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translatex(0);
+      opacity: 1;
+    }
+}
+
+.custom-shape-divider-top-1659443965 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1659443965 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 189px;
+}
+
+.custom-shape-divider-top-1659443965 .shape-fill {
+    fill: #ffffff;
 }
