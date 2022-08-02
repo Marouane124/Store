@@ -32,14 +32,14 @@ function ActiveMenu(){
     document.getElementById("propos-java").classList.remove('active');
     document.getElementById("Contact-java").classList.remove('active');
   }
-  if (document.body.scrollTop > 710 || document.documentElement.scrollTop > 710) { 
+  if (document.body.scrollTop > 3200 || document.documentElement.scrollTop > 3200) { 
     document.getElementById("nav").className += " nav-opacity";
     document.getElementById("navitem").classList.remove('active');
     document.getElementById("content1-java").classList.remove('active');
     document.getElementById("propos-java").className += " active"; 
     document.getElementById("Contact-java").classList.remove('active');
   }
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+  if (document.body.scrollTop > 3500 || document.documentElement.scrollTop > 3500) {
     document.getElementById("nav").className += " nav-opacity";
     document.getElementById("navitem").classList.remove('active');
     document.getElementById("content1-java").classList.remove('active');
@@ -63,17 +63,15 @@ function reveal(){
 }
 
 function AnimateLine(){
-  var reveals = document.querySelectorAll('.line');
-  
-  for(var i = 0;i < reveals.length; i++){
-    var windowheight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 150;
-    if(revealtop < windowheight - revealpoint){
-      reveals[i].classList.add('line-animation');
-    }
+  var line = document.querySelectorAll('.line');
+  var windowheight = window.innerHeight;
+  var linetop = line[0].getBoundingClientRect().top;
+  var revealpoint = 150;
+  if(linetop < windowheight - revealpoint){
+      line[0].classList.add('line-animation');
   }
 }
+
 
 function parallax(){
   var parallax = document.getElementById("parallax");
