@@ -32,14 +32,14 @@ function ActiveMenu(){
     document.getElementById("propos-java").classList.remove('active');
     document.getElementById("Contact-java").classList.remove('active');
   }
-  if (document.body.scrollTop > 3200 || document.documentElement.scrollTop > 3200) { 
+  if (document.body.scrollTop > 2560 || document.documentElement.scrollTop > 2560) { 
     document.getElementById("nav").className += " nav-opacity";
     document.getElementById("navitem").classList.remove('active');
     document.getElementById("content1-java").classList.remove('active');
     document.getElementById("propos-java").className += " active"; 
     document.getElementById("Contact-java").classList.remove('active');
   }
-  if (document.body.scrollTop > 3500 || document.documentElement.scrollTop > 3500) {
+  if (document.body.scrollTop > 2815 || document.documentElement.scrollTop > 2815) {
     document.getElementById("nav").className += " nav-opacity";
     document.getElementById("navitem").classList.remove('active');
     document.getElementById("content1-java").classList.remove('active');
