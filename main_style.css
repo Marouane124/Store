@@ -4,7 +4,6 @@
     text-decoration:none;
     list-style: none;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 html{
     scroll-behavior:smooth
@@ -664,7 +663,7 @@ main {
 .curve svg {
     position: relative;
     display: block;
-    width: calc(134% + 1.3px);
+    width: calc(142% + 1.3px);
     height: 189px;
 }
 
