@@ -656,7 +656,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     line-height: 0;
 }
 
@@ -683,7 +683,7 @@ main {
     top: -7px;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: 0;
     line-height: 0;
 }
@@ -705,7 +705,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     line-height: 0;
     transform: rotate(180deg);
 }
