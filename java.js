@@ -32,14 +32,14 @@ function ActiveMenu(){
     document.getElementById("propos-java").classList.remove('active');
     document.getElementById("Contact-java").classList.remove('active');
   }
-  if (document.body.scrollTop > 2560 || document.documentElement.scrollTop > 2560) { 
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) { 
     document.getElementById("nav").className += " nav-opacity";
     document.getElementById("navitem").classList.remove('active');
     document.getElementById("content1-java").classList.remove('active');
     document.getElementById("propos-java").className += " active"; 
     document.getElementById("Contact-java").classList.remove('active');
   }
-  if (document.body.scrollTop > 2815 || document.documentElement.scrollTop > 2815) {
+  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
     document.getElementById("nav").className += " nav-opacity";
     document.getElementById("navitem").classList.remove('active');
     document.getElementById("content1-java").classList.remove('active');
@@ -51,7 +51,6 @@ function ActiveMenu(){
 
 function reveal(){
   var reveals = document.querySelectorAll('.reveal');
-  
   for(var i = 0;i < reveals.length; i++){
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;
@@ -71,7 +70,6 @@ function AnimateLine(){
       line[0].classList.add('line-animation');
   }
 }
-
 
 function parallax(){
   var parallax = document.getElementById("parallax");
