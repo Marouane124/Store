@@ -651,25 +651,7 @@ main {
     }
 }
 
-.curve {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow-x: hidden;
-    line-height: 0;
-}
 
-.curve svg {
-    position: relative;
-    display: block;
-    width: calc(142% + 1.3px);
-    height: 189px;
-}
-
-.curve .shape-fill {
-    fill: #ffffff;
-}
 .gradient{
     background-position: center;
     background-repeat: no-repeat;
@@ -683,7 +665,7 @@ main {
     top: -7px;
     left: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 0;
     line-height: 0;
 }
@@ -705,7 +687,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
 }
