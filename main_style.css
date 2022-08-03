@@ -656,7 +656,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     line-height: 0;
 }
 
@@ -675,7 +675,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(Images/stacked-waves-haikei.svg);
-    overflow-x: hidden;
     /*linear-gradient(white,#9ff5ca,#92f5c3);*/
 }
 
@@ -684,7 +683,7 @@ main {
     top: -7px;
     left: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 0;
     line-height: 0;
 }
@@ -706,7 +705,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
 }
