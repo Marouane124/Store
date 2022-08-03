@@ -219,8 +219,8 @@ main {
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
-        #4ee6fa 0%,
-        #36e3fa 34%,
+        #27bdd1 0%,
+        #29bccf 34%,
         #269faf 64%,
         #0eb4a6 100%
     );
@@ -506,7 +506,6 @@ main {
 @media (max-width: 768px){
     label.logo{
         font-size: 30px;
-        padding-left: 50px;
     }
     nav ul li a{
         font-size: 10px;
@@ -652,7 +651,7 @@ main {
     }
 }
 
-.custom-shape-divider-top-1659443965 {
+.curve {
     position: absolute;
     top: 0;
     left: 0;
@@ -661,13 +660,16 @@ main {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1659443965 svg {
+.curve svg {
     position: relative;
     display: block;
     width: calc(134% + 1.3px);
     height: 189px;
 }
 
-.custom-shape-divider-top-1659443965 .shape-fill {
+.curve .shape-fill {
     fill: #ffffff;
+}
+.gradient{
+    background-image: linear-gradient(white,#9ff5ca,#92f5c3);
 }
