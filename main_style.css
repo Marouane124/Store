@@ -197,7 +197,7 @@ p{
 }
    
 main {
-    background-image: url(Images/Background.png);
+    background-image: url(Images/Background.WebP);
     background-size: cover;
     grid-area: main;
     border-radius: 5px;
