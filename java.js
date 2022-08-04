@@ -1,5 +1,5 @@
-window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax();Closemenu() });
-
+window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax();});
+window.addEventListener('click',Closemenu);
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
     mybutton.style.display = "none";
