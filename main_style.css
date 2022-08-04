@@ -650,6 +650,7 @@ main {
   
 .reveal.active {
     opacity: 1;
+    transition: .75s;
 }
 
 .active.from_bottom {
