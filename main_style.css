@@ -255,6 +255,7 @@ main {
     margin: 20px;
     border-radius: 1rem;
     background-size: cover;
+    background-color: rgb(240, 240, 240);
 }
 .card .image{
     width: 100%;
