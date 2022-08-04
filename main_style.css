@@ -199,6 +199,7 @@ p{
 main {
     background-image: url(Images/Background.WebP);
     background-size: cover;
+    background-repeat: no-repeat;
     grid-area: main;
     border-radius: 5px;
     padding-top: 180px;
@@ -611,7 +612,7 @@ main {
 .reveal {
     position: relative;
     opacity: 0;
-  }
+}
   
 .reveal.active {
     opacity: 1;
@@ -623,6 +624,11 @@ main {
 
 .active.from_left {
     animation: from-left 1s ease-in;
+}
+
+.active.size_up{
+    font-size: 20px;
+    transition: .75s;
 }
 
 
