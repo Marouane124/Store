@@ -278,7 +278,6 @@ main {
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.301),rgba(197, 245, 245, 0.507));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
