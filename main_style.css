@@ -124,7 +124,7 @@ main p{
     100%{color:black}
 }
 
-button{
+.fill {
     width: 200px;
     color: white;
     font-size: 15px;
@@ -136,10 +136,31 @@ button{
     margin-top: 30px;
     cursor: pointer;
     font-weight: bold;
-
+    position: relative;
+    z-index: 1;
+    transition: color .5s ease-in-out;
 }
-button:hover{
-    box-shadow: 0px 7px 10px rgba(0,0,0,0.5); 
+.fill:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    border-radius: 20px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: width .5s ease-in-out;
+}
+.fill:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.fill:hover:after {
+    width: 100%;
 }
 
 #myBtn {
