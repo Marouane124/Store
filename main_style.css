@@ -141,6 +141,7 @@ button{
 button:hover{
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5); 
 }
+
 #myBtn {
     display: block;
     position: fixed;
@@ -199,6 +200,7 @@ main {
     background-image: url(Images/Background.WebP);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
     grid-area: main;
     border-radius: 5px;
     padding-top: 180px;

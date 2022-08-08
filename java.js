@@ -85,9 +85,8 @@ function Closemenu(){
     }
   }
 }
-function OpenPage(){
-  var page = document.getElementById("Product_page");
-  
-  page.style.display == "block";
 
+function OpenPage(){
+  var page = document.getElementById("Produits");
+  page.style.display == "block";
 }
