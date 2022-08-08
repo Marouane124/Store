@@ -366,6 +366,9 @@ main {
     transform: translateY(30px);
     transition: 0.5s all;
 }
+.card .info h4:hover{
+    background: rgba(59, 174, 180, 0.774);
+}
 .Description{
     margin-top: -1px;
     font-size: 13px;
