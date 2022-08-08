@@ -212,6 +212,12 @@ main {
     scroll-margin-top: 5rem;
     z-index: 0;
 }
+.gradient{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Images/stacked-waves-haikei.svg);
+}
 
 .Title{
     font-size: 22px;
@@ -505,7 +511,7 @@ main {
 }
 
 .contact_info{
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-bottom: 1rem;
     margin-left: 10rem;
     text-align: left;
@@ -558,7 +564,7 @@ main {
     ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         background: #53e9e9;
         top: 70px;
         left: -100%;
@@ -690,11 +696,54 @@ main {
     }
 }
 
-
-.gradient{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(Images/stacked-waves-haikei.svg);
-    /*linear-gradient(white,#9ff5ca,#92f5c3);*/
+/*
+.Product_page{
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    width: 50%;
+    height: 75%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 2rem;
+    border-width: 20px;
+    z-index: 200;
+    border: 2px solid rgb(228, 227, 227);
+    display: none;
 }
+
+.fa-x{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    left: 25.2rem;
+    top: -1.5rem;
+}
+.fa-x:hover{
+    cursor: pointer;
+    color: grey;
+}
+#closebutton{
+    display: none;
+}
+.Ajouter{
+    position: relative;
+    top: 23rem;
+    left: 10rem;
+    width: 200px;
+    color: white;
+    font-size: 15px;
+    padding: 12px 0;
+    background: rgb(94, 129, 163);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Ajouter:hover{
+    box-shadow: 0px 7px 10px rgba(135, 179, 236, 0.5);
+}
+*/
+

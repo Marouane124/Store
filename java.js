@@ -1,4 +1,4 @@
-window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax();});
+window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax();Closemenu()});
 window.addEventListener('click',Closemenu);
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
@@ -84,4 +84,10 @@ function Closemenu(){
       button.checked = false;
     }
   }
+}
+function OpenPage(){
+  var page = document.getElementById("Product_page");
+  
+  page.style.display == "block";
+
 }
