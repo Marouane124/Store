@@ -457,8 +457,9 @@ main {
     margin-top: -35px;
 }
 .contact_form a{
-    font-size: 15px;
+    font-size: 18px;
     color: black;
+    margin-left: .6em;
 }
 
 .form{
@@ -541,6 +542,34 @@ main {
     margin-bottom: 1rem;
     margin-left: 10rem;
     text-align: left;
+}
+
+.fa-brands{
+    font-size: 25px;
+    color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+.fa-square-facebook{
+    color: #3256a3;
+}
+.fa-square-twitter{
+    color: #00acee;
+}
+.fa-square-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.fa-linkedin{
+    color: #0e76a8;
+}
+.fa-brands:hover{
+    transform: translateY(-2px);
+}
+.mail-icon:hover .fa-envelope::before{
+    content:"\f2b6";
+}
+.phone-icon:hover .fa-phone::before{
+    content:"\f2a0";
 }
 
 #footer{
