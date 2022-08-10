@@ -86,7 +86,12 @@ function Closemenu(){
   }
 }
 
-function OpenPage(){
-  var page = document.getElementById("Produits");
-  page.style.display == "block";
+function OpenProductMenu(){
+  var page = document.getElementById("Product_page");
+  page.style.display = "block";
+}
+function CloseProductMenu(){
+  var page = document.getElementById("Product_page");
+  page.style.display = "none";
+  
 }

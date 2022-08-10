@@ -572,6 +572,62 @@ main {
     content:"\f2a0";
 }
 
+
+.Product_page{
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    width: 40rem;
+    height: 75%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1.5rem;
+    border-width: 20px;
+    z-index: 80;
+    border: 2px solid rgb(228, 227, 227);
+    display: none;
+    animation-name: animation;
+    animation-duration: 0.4s;
+}
+@keyframes animation {
+    from {top: -300px; opacity: 0}
+    to {top: 15%; opacity: 1}
+}
+
+.fa-x{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    left: 23.4rem;
+
+}
+.fa-x:hover{
+    cursor: pointer;
+    color: grey;
+}
+#closebutton{
+    display: none;
+}
+.Ajouter{
+    position: relative;
+    top: 26rem;
+    left: 14rem;
+    width: 150px;
+    color: white;
+    font-size: 15px;
+    padding: 12px 0;
+    background: rgb(94, 129, 163);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Ajouter:hover{
+    box-shadow: 0px 7px 10px rgba(135, 179, 236, 0.5);
+}
+
 #footer{
     width: 100%;
     bottom: 0px;
@@ -682,6 +738,25 @@ main {
         text-align: left;
     }
 
+    .Product_page{
+        left: 1rem;
+        right: 1rem;
+        width: auto;
+        border-radius: 1.5rem;
+    }
+
+    .fa-x{
+        left: 15.4rem;
+    }
+    .Ajouter{
+        top: 24.5rem;
+        left: 8rem;
+        width: 115px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+
     #footer{
         padding: 0px 0px;
         margin: 0;
@@ -750,55 +825,3 @@ main {
       opacity: 1;
     }
 }
-
-/*
-.Product_page{
-    position: fixed;
-    top: 15%;
-    left: 25%;
-    right: 25%;
-    bottom: 25%;
-    width: 50%;
-    height: 75%;
-    background-color: rgb(240, 240, 240);
-    border-radius: 2rem;
-    border-width: 20px;
-    z-index: 200;
-    border: 2px solid rgb(228, 227, 227);
-    display: none;
-}
-
-.fa-x{
-    position: relative;
-    color: black;
-    font-size: 20px;
-    left: 25.2rem;
-    top: -1.5rem;
-}
-.fa-x:hover{
-    cursor: pointer;
-    color: grey;
-}
-#closebutton{
-    display: none;
-}
-.Ajouter{
-    position: relative;
-    top: 23rem;
-    left: 10rem;
-    width: 200px;
-    color: white;
-    font-size: 15px;
-    padding: 12px 0;
-    background: rgb(94, 129, 163);
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-.Ajouter:hover{
-    box-shadow: 0px 7px 10px rgba(135, 179, 236, 0.5);
-}
-*/
-
