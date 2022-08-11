@@ -502,6 +502,7 @@ main {
     background: #73ffba;
     cursor: text;
     font-size: 14px;
+    transition: .2s;
 }
 
 .form_input:hover{
