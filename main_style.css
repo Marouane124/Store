@@ -202,7 +202,7 @@ p{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 545px auto 230px 500px 70px;
+    grid-template-rows: 70px 545px auto 230px auto 70px;
     grid-template-areas:
       "nav nav nav"
       "main main main"
@@ -641,6 +641,18 @@ main {
     nav ul li a{
         font-size: 10px;
     }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 400px auto  255px auto auto 70px;
+        grid-template-areas:
+          "nav"
+          "main"
+          "Produits"
+          "Apropos"
+          "form_zone"
+          "Map"
+          "footer";
+      }
 }
 @media only screen and (max-width: 550px) {
     .container {
