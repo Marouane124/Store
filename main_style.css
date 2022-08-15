@@ -631,6 +631,7 @@ main {
     z-index: 81;
 }
 .product_info h5{
+    padding-top: 1rem;
     animation: Afficherinfo 1s;
 }
 .product_info p{
@@ -785,12 +786,15 @@ main {
     .shop_img{
         left: 1rem;
         top: 2rem;
-        width: 12rem;
+        width: 10rem;
         height: auto;
     }
     .product_info{
         left:50%;
         top: 2.5rem;
+    }
+    .product_info p{
+        font-size: 13px;
     }
 
     #footer{
