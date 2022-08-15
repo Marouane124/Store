@@ -559,7 +559,6 @@ main {
     content:"\f2a0";
 }
 
-
 .Product_page{
     position: fixed;
     top: 15%;
@@ -583,11 +582,11 @@ main {
 }
 
 .fa-x{
-    position: relative;
+    position: absolute;
     color: black;
     font-size: 20px;
-    left: 23.4rem;
-
+    right: .8rem;
+    top: .6rem;
 }
 .fa-x:hover{
     cursor: pointer;
@@ -597,9 +596,9 @@ main {
     display: none;
 }
 .Ajouter{
-    position: relative;
-    top: 26rem;
-    left: 14rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
     width: 150px;
     color: white;
     font-size: 15px;
@@ -613,6 +612,39 @@ main {
 }
 .Ajouter:hover{
     box-shadow: 0px 7px 10px rgba(135, 179, 236, 0.5);
+}
+.shop_img{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 20px;
+    z-index: 82;
+}
+.product_info{
+    position: absolute;
+    width: 50%;
+    height:50%;
+    left: 45%;
+    top: 2rem;
+    z-index: 81;
+}
+.product_info h5{
+    animation: Afficherinfo 1s;
+}
+.product_info p{
+    padding-top: 2rem;
+    animation: Afficherinfo 1.5s;
+}
+
+@keyframes Afficherinfo {
+    from {
+        transform: translateX(-5rem);
+    }
+    to {
+        transform: translateX(0px);
+    }
 }
 
 #footer{
@@ -637,6 +669,7 @@ main {
 @media (max-width: 768px){
     label.logo{
         font-size: 30px;
+        padding-right: 200px;
     }
     nav ul li a{
         font-size: 10px;
@@ -744,17 +777,21 @@ main {
         border-radius: 1.5rem;
     }
 
-    .fa-x{
-        left: 15.4rem;
-    }
     .Ajouter{
-        top: 24.5rem;
-        left: 8rem;
         width: 115px;
         font-size: 13px;
         border-radius: 10px;
     }
-
+    .shop_img{
+        left: 1rem;
+        top: 2rem;
+        width: 12rem;
+        height: auto;
+    }
+    .product_info{
+        left:50%;
+        top: 2.5rem;
+    }
 
     #footer{
         padding: 0px 0px;
