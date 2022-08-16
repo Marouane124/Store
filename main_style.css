@@ -573,8 +573,7 @@ main {
     z-index: 80;
     border: 2px solid rgb(228, 227, 227);
     display: none;
-    animation-name: animation;
-    animation-duration: 0.4s;
+    animation: animation 0.4s;
 }
 @keyframes animation {
     from {top: -300px; opacity: 0}
@@ -621,7 +620,16 @@ main {
     height: 20rem;
     border-radius: 20px;
     z-index: 82;
+    outline: .1rem solid rgba(0,0,0,.1);
+    outline-offset: -0.5rem;
+    transition: .2s linear;
 }
+.shop_img:hover{
+    outline: .12rem solid rgba(0, 0, 0, 0.644);
+    outline-offset: 0rem;
+    transition: .2s linear;
+}
+
 .product_info{
     position: absolute;
     width: 50%;
@@ -731,7 +739,6 @@ main {
     } 
     nav ul li a:hover{
         background: #299e83;
-        color: #1ad3d3;
         transition: .5s;
         border-radius: 10px;
         transition: .75s;
@@ -784,10 +791,10 @@ main {
         border-radius: 10px;
     }
     .shop_img{
-        left: 1rem;
+        left: .5rem;
         top: 2rem;
         width: 12rem;
-        height: 18rem;
+        height: 16rem;
     }
     .product_info{
         left:50%;
