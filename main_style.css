@@ -626,7 +626,7 @@ main {
 }
 .shop_img:hover{
     outline: .12rem solid rgba(0, 0, 0, 0.644);
-    outline-offset: 0rem;
+    outline-offset: -0.2rem;
     transition: .2s linear;
 }
 
@@ -637,6 +637,7 @@ main {
     left: 45%;
     top: 2rem;
     z-index: 81;
+    pointer-events: none;
 }
 .product_info h5{
     padding-top: 1rem;

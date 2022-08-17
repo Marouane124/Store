@@ -100,7 +100,7 @@ function CloseProductPage(){
   var page = document.getElementById("Product_page");
   if(page.style.display == "block"){
     document.onclick = function(clickevent){
-      if(clickevent.target.className !=="Product_page" || clickevent.target.className =="closebutton"){
+      if(clickevent.target.className !=="Product_page" && clickevent.target.className !=="shop_img" || clickevent.target.className =="closebutton"){
         page.style.display = "none";
       }
     }
