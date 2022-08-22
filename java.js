@@ -1,5 +1,5 @@
 window.addEventListener('scroll',() => { ActiveMenu(); reveal(); AnimateLine(); parallax();Closemenu()});
-window.addEventListener('click',() => { Closemenu();CloseProductPage()});
+window.addEventListener('click',() => { Closemenu();CloseProductMenu()});
 function Verifyposition(){
     var mybutton = document.getElementById("myBtn");
     mybutton.style.display = "none";
@@ -92,11 +92,6 @@ function OpenProductMenu(){
 }
 
 function CloseProductMenu(){
-  var page = document.getElementById("Product_page");
-  page.style.display = "none";
-}
-
-function CloseProductPage(){
   var page = document.getElementById("Product_page");
   if(page.style.display == "block"){
     document.onclick = function(clickevent){

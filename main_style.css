@@ -28,7 +28,7 @@ nav:hover{
     opacity:1;
 }
 
-label.logo{
+.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -67,21 +67,52 @@ nav ul li a:hover{
     transition: .75s;
 }
 
+
 .checkbtn{
-   font-size: 30px;
-   color: rgb(24, 133, 148);
-   float: right;
-   padding: right;
-   line-height: 80px;
-   margin-right: 40px;
-   cursor:pointer;
-   display: none;
+    display: none;
 }
 #check{
-   display: none;
+    display: none;
 }
 
-
+label {
+    width:30px;
+    height: 5px;
+    right: 20px;
+    top: 34px;
+    background-color: rgb(24, 133, 148);
+    cursor: pointer;
+    position: fixed;
+    border-radius: 20px;
+}  
+label::before,label::after {
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: rgb(24, 133, 148);
+    border-radius: 20px;
+    position: absolute;
+    display: block;
+    transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+}
+  
+label::before {
+    top: -200%;
+    left: 0%;
+    transform: rotateZ(0deg);
+    transform-origin: left top;
+}
+  
+label::after {
+    bottom: -200%;
+    left: 0%;
+    transform: rotateZ(0deg);
+    transform-origin: left bottom;
+}
+  
+#check ~ label {
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
 
 /*--------------------------------------------------------*/
 
@@ -695,7 +726,7 @@ main {
 } 
 /*------------------------------Compatibilite avec les mobiles-----------------------*/
 @media (max-width: 768px){
-    label.logo{
+    .logo{
         font-size: 30px;
         padding-right: 200px;
     }
@@ -765,6 +796,22 @@ main {
 
     #check:checked ~ ul{
         left: 0;
+    }
+    #check:checked ~ label::before {
+        content: "";
+        background-color: rgb(18, 97, 107);
+        transform: rotateZ(45deg);
+        left: 10%;
+        top:-10px;
+    }
+    #check:checked ~ label::after {
+        content: "";
+        background-color: rgb(18, 97, 107);
+        transform: rotateZ(-45deg);
+        left: 10%;
+    }     
+    #check:checked ~ label {
+        background-color: #64ffda;
     }
 
     main {
