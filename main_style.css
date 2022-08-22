@@ -812,6 +812,7 @@ main {
     }     
     #check:checked ~ label {
         background-color: #64ffda;
+        width: 20px;
     }
 
     main {
