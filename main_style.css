@@ -32,7 +32,7 @@ label.logo{
     color: red;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 8rem 10px 0;
+    padding: 0 8px 10px 0;
     font-weight: bold;
 }
 
@@ -725,28 +725,12 @@ main {
     line-height: 30px;
 } 
 /*------------------------------Compatibilite avec les mobiles-----------------------*/
-@media (max-width: 768px){
+@media only screen and (max-width: 1000px) {
     label.logo{
         font-size: 30px;
-        padding-right: 200px;
+        margin-right:35rem;
+        margin-left: 60px;
     }
-    nav ul li a{
-        font-size: 10px;
-    }
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 70px 400px auto  255px auto auto 70px;
-        grid-template-areas:
-          "nav"
-          "main"
-          "Produits"
-          "Apropos"
-          "form_zone"
-          "Map"
-          "footer";
-      }
-}
-@media only screen and (max-width: 550px) {
     .container {
       grid-template-columns: 1fr;
       grid-template-rows: 70px 300px auto  255px auto 350px 70px;
